@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './editdata.dart';
+import './edit.dart';
 import 'package:http/http.dart' as http;
 import './main.dart';
 
