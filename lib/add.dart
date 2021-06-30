@@ -15,13 +15,12 @@ TextEditingController controllerPrice = new TextEditingController();
 TextEditingController controllerStock = new TextEditingController();
 
 void addData(){
-  var url="http://10.0.2.2/my_store/adddata.php";
+  var url="http://10.0.2.2/rekam_medis/add.php";
 
   http.post(url, body: {
-    "itemcode": controllerCode.text,
-    "itemname": controllerName.text,
-    "price": controllerPrice.text,
-    "stock": controllerStock.text
+    "id_obat": controllerName.text,
+    "nama_obat": controllerPrice.text,
+    "ket_obat": controllerStock.text
   });
 }
 
