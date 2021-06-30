@@ -8,7 +8,7 @@ import './add.dart';
 
 void main() {
   runApp(new MaterialApp(
-    title: "My Store",
+    title: "Obat",
     home: new Home(),
   ));
 }
@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("MY STORE"),
+        title: new Text("Obat"),
       ),
       floatingActionButton: new FloatingActionButton(
         child: new Icon(Icons.add),
