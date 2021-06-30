@@ -29,7 +29,7 @@ void addData(){
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("ADD DATA"),
+        title: new Text("Tambah Data"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
@@ -40,28 +40,23 @@ void addData(){
                 new TextField(
                   controller: controllerCode,
                   decoration: new InputDecoration(
-                      hintText: "Item Code", labelText: "Item Code"),
+                      hintText: "id_obat", labelText: "id_obat"),
                 ),
                 new TextField(
                   controller: controllerName,
                   decoration: new InputDecoration(
-                      hintText: "Item Name", labelText: "Item Name"),
+                      hintText: "nama_obat", labelText: "nama_obat"),
                 ),
                 new TextField(
                   controller: controllerPrice,
                   decoration: new InputDecoration(
-                      hintText: "Price", labelText: "Price"),
-                ),
-                new TextField(
-                  controller: controllerStock,
-                  decoration: new InputDecoration(
-                      hintText: "Stock", labelText: "Stock"),
+                      hintText: "ket_obat", labelText: "ket_obat"),
                 ),
                 new Padding(
                   padding: const EdgeInsets.all(10.0),
                 ),
                 new RaisedButton(
-                  child: new Text("ADD DATA"),
+                  child: new Text("Tambah"),
                   color: Colors.blueAccent,
                   onPressed: () {
                     addData();
