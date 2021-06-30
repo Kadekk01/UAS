@@ -61,9 +61,9 @@ void confirm (){
 
                 new Padding(padding: const EdgeInsets.only(top: 30.0),),
                 new Text(widget.list[widget.index]['item_name'], style: new TextStyle(fontSize: 20.0),),
-                new Text("Code : ${widget.list[widget.index]['item_code']}", style: new TextStyle(fontSize: 18.0),),
-                new Text("Price : ${widget.list[widget.index]['price']}", style: new TextStyle(fontSize: 18.0),),
-                new Text("Stock : ${widget.list[widget.index]['stock']}", style: new TextStyle(fontSize: 18.0),),
+                new Text("id_obat : ${widget.list[widget.index]['item_code']}", style: new TextStyle(fontSize: 10.0),),
+                new Text("nama_obat : ${widget.list[widget.index]['price']}", style: new TextStyle(fontSize: 10.0),),
+                new Text("ket_obat : ${widget.list[widget.index]['stock']}", style: new TextStyle(fontSize: 10.0),),
                 new Padding(padding: const EdgeInsets.only(top: 30.0),),
 
                 new Row(
@@ -71,7 +71,7 @@ void confirm (){
                   children: <Widget>[
                     new RaisedButton(
                       child: new Text("EDIT"),
-                      color: Colors.green,
+                      color: Colors.blue,
                       onPressed: ()=>Navigator.of(context).push(
                         new MaterialPageRoute(
                           builder: (BuildContext context)=>new EditData(list: widget.list, index: widget.index,),
