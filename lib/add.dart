@@ -8,7 +8,6 @@ class AddData extends StatefulWidget {
 
 class _AddDataState extends State<AddData> {
 
-
 TextEditingController controllerCode = new TextEditingController();
 TextEditingController controllerName = new TextEditingController();
 TextEditingController controllerPrice = new TextEditingController();

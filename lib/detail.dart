@@ -14,9 +14,9 @@ class Detail extends StatefulWidget {
 class _DetailState extends State<Detail> {
 
 void deleteData(){
-  var url="http://10.0.2.2/my_store/deleteData.php";
+  var url="http://10.0.2.2/rekam_medis/delete.php";
   http.post(url, body: {
-    'id': widget.list[widget.index]['id']
+    'id_obat': widget.list[widget.index]['id_obat']
   });
 }
 
@@ -60,7 +60,6 @@ void confirm (){
               children: <Widget>[
 
                 new Padding(padding: const EdgeInsets.only(top: 30.0),),
-                new Text(widget.list[widget.index]['item_name'], style: new TextStyle(fontSize: 20.0),),
                 new Text("id_obat : ${widget.list[widget.index]['item_code']}", style: new TextStyle(fontSize: 10.0),),
                 new Text("nama_obat : ${widget.list[widget.index]['price']}", style: new TextStyle(fontSize: 10.0),),
                 new Text("ket_obat : ${widget.list[widget.index]['stock']}", style: new TextStyle(fontSize: 10.0),),
