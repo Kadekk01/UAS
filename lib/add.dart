@@ -14,7 +14,7 @@ TextEditingController controllerPrice = new TextEditingController();
 TextEditingController controllerStock = new TextEditingController();
 
 void addData(){
-  var url="http://10.0.2.2/rekam_medis/add.php";
+  var url="http://10.0.2.2/rekam_medis/tambah.php";
 
   http.post(url, body: {
     "id_obat": controllerName.text,
